@@ -48,7 +48,7 @@ export default function Hero() {
 
           <p className="mt-5 max-w-xl text-base leading-7 text-gray-600">
             I build clean, responsive, and user-focused web interfaces using
-            modern frontend technologies.
+            modern frontend technologies. I am a seeker.
           </p>
 
           {/* CTA Buttons */}
