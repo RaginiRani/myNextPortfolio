@@ -3,7 +3,7 @@ import React from 'react'
 
 function Highlight({title}: {title: string}){
         return(
-            <div className='rounded-xl border border-black px-5 py-4'>
+            <div className='rounded-xl border border-black px-5 py-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#617a39]/10'>
                 <p className='font-medium text-[#617a39]'>
                     {title}
                 </p>
@@ -60,7 +60,7 @@ function About() {
                 </p>
             </div>
             {/* Highlights */}
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            <div className="mt-14 grid gap-6 sm:grid-cols-2 md:grid-cols-3 ">
                 <Highlight title="Full-Stack Development" />
                 <Highlight title="MERN & REST APIs" />
                 <Highlight title="System Design Mindset" />
