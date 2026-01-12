@@ -1,15 +1,19 @@
 
 import React from 'react'
+import Reveal from './ui/Reveal'
 
-function Highlight({title}: {title: string}){
-        return(
-            <div className='rounded-xl border border-black px-5 py-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#617a39]/10'>
-                <p className='font-medium text-[#617a39]'>
-                    {title}
-                </p>
-            </div>
-        )
+function Highlight({ title }: { title: string }) {
+  return (
+    <Reveal delay={0.1}>
+      <div className="rounded-xl border border-[#617a39]/30 px-5 py-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#617a39]/10">
+        <p className="font-medium text-[#617a39]">
+          {title}
+        </p>
+      </div>
+    </Reveal>
+  )
 }
+
 function StatCard({value,label}:{value:string, label:string}){
     return(
         <div className="group rounded-xl border border-[#617a39]/30 bg-[#617a39]/5 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#617a39]/10">
