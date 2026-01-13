@@ -16,14 +16,17 @@ function Highlight({ title }: { title: string }) {
 
 function StatCard({value,label}:{value:string, label:string}){
     return(
-        <div className="group rounded-xl border border-[#617a39]/30 bg-[#617a39]/5 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#617a39]/10">
-            <p className="text-3xl font-bold text-[#617a39]">
-                {value}
-            </p>
-            <p className="mt-2 text-sm font-medium text-gray-600">
-                {label}
-            </p>
-        </div>
+        <Reveal delay={0.1}>
+            <div className="group rounded-xl border border-[#617a39]/30 bg-[#617a39]/5 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#617a39]/10">
+                <p className="text-3xl font-bold text-[#617a39]">
+                    {value}
+                </p>
+                <p className="mt-2 text-sm font-medium text-gray-600">
+                    {label}
+                </p>
+            </div>
+        </Reveal>
+        
     )
 }
 function About() {
